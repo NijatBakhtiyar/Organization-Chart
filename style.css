@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+.chart {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  cursor: all-scroll;
+}
+
+.initial-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.initial-block p {
+  padding: 10px 20px;
+  background: #fff;
+  border: 2px dashed #c0d6df;
+  font-size: 16px;
+  margin-right: 10px;
+  position: relative;
+}
+
+button {
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding-bottom: 3px;
+}
+
+.add-btn,
+.edit-btn {
+  background: #c7cfd9;
+}
+
+.edit-btn {
+  font-size: 16px;
+}
+
+.save-btn {
+  color: green;
+  margin-left: 8px;
+  background: #c7cfd9;
+  font-size: 16px;
+}
+
+.add-btn {
+  display: flex;
+  margin: 0 8px;
+}
+
+.delete-btn {
+  background: #c7cfd9;
+  margin: 0 8px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.sub-block {
+  display: flex;
+  gap: 40px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.block .content input {
+  background: #fd9b78;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 2px;
+  outline-color: #c7cfd9;
+  width: 120px;
+}
+
+.block .content input::placeholder {
+  color: #fff;
+}
